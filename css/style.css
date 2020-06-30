@@ -8,6 +8,11 @@
     grid-template-columns: 30% auto;
 }
 
+.nav-wrapper ul li{
+    display: inline;
+    list-style-type: none;
+}
+
 .main-wrapper{
     max-width: 1200px;
     margin: auto;
@@ -36,8 +41,25 @@
 
 .sub-featured{
     grid-area: featuredSub;
+    background-color: rgb(139, 105, 97);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.sub1{
     background-color: rgb(78, 240, 146);
 }
+
+.sub2{
+    background-color: rgb(78, 240, 146);
+}
+
+.sub3{
+    background-color: rgb(78, 240, 146);
+}
+
+
 
 .main-content{
     grid-area: contentMain;
