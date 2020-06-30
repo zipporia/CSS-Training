@@ -16,3 +16,35 @@
 .burger-icon{
     display: none;
 }
+
+.wrapper{
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+        "featuredMain featuredMain featuredSub"
+        "contentMain contentMain contentSub"
+}
+
+.featured{
+    grid-area: featuredMain;
+    min-height: 500px;
+    background-color: rgb(156, 215, 250);
+}
+
+.sub-featured{
+    grid-area: featuredSub;
+    background-color: rgb(78, 240, 146);
+}
+
+.main-content{
+    grid-area: contentMain;
+    background-color: rgb(243, 124, 144);
+}
+
+.main-sidebar{
+    grid-area: contentSub;
+    background-color: rgb(247, 199, 111);
+}
