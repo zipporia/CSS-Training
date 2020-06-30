@@ -1,0 +1,18 @@
+.nav-wrapper{
+    background-color: rgb(196, 194, 194);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:15px 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.main-wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.burger-icon{
+    display: none;
+}
