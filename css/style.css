@@ -41,7 +41,7 @@
 
 .sub-featured{
     grid-area: featuredSub;
-    background-color: rgb(139, 105, 97);
+    background-color: rgb(66, 61, 60);
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -82,4 +82,34 @@
     justify-content: center;
     background-color: rgb(48, 48, 48);
     color: #fff;
+}
+
+/* TABLET MEDIA QUERY */
+
+@media screen and (max-width:950px){
+    .wrapper{
+        grid-template-areas: 
+            "featuredMain featuredMain featuredMain"
+            "featuredSub featuredSub featuredSub"
+            "contentMain contentMain contentSub"
+    }
+
+    .sub-featured{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-items{
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    .logo{
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    .nav-wrapper{
+        margin-top: 0;
+    }
+
 }
