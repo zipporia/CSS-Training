@@ -114,6 +114,8 @@
 
 }
 
+/* MOBLIE MEDIA QUERY*/
+
 @media screen and (max-width:600px){
     .logo{
         grid-column: 1/2;
@@ -148,5 +150,15 @@
         cursor: pointer;
     }
 
-   
+   .wrapper{
+       grid-template-areas:
+        "featuredMain featuredMain featuredMain"
+        "contentMain contentMain contentMain"
+        "featuredSub featuredSub featuredSub"
+        "contentSub contentSub contentSub"
+   }
+
+   .sub-featured{
+       grid-template-columns: 1fr;
+   }
 }
