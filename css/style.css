@@ -161,4 +161,9 @@
    .sub-featured{
        grid-template-columns: 1fr;
    }
+
+   .footer > div{
+       grid-column: 1/-1;
+   }
+
 }
